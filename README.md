@@ -19,6 +19,8 @@ There are four user-input parameters:
   Once optimal parameters have been found, the button "Segment folder" performs the same analysis on all images available in the folder, ans saves two outputs per input:
   * A labelled .tif, where each pixel value corresponds to a detected object (8-bit or 16-bit, depending on the amount of beads)
   * A .txt file with the estimated radius of each particle (assuming 1um isotropic resolution and round objects)
+ 
+The function MasterSegmenter.py can also be used independently of the GUI. It contains some additional arguments which are not available in the GUI, like show_plots, which shows maximum projection representations of different stages of the analysis (noise reduction, thresholding...). This allows an easier parameter optimization if the datasets are very big (which sometimes compromises the speed of the GUI).
   
 
 
